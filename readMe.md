@@ -34,7 +34,7 @@ Chromedriver => ChromeDriver is a separate executable that Selenium WebDriver us
 ## About project
 
 ### For words to CSV [words_to_csv](https://github.com/kalyanivetal/mini_projects/tree/master/words_csv)
-### For audio downloads [audios_to_file](https://github.com/kalyanivetal/mini_projects/tree/master/audio_download)
+### For audio downloads [word_to_audio](https://github.com/kalyanivetal/mini_projects/tree/master/audio_download)
 
 * [Python3]()- The langauge used for webscraping
 * [CSV]()-  Read and write data into CSV file
