@@ -1,11 +1,14 @@
-# Automationg Chromium web browser and save 2 letter and 3 letter words into 2 CSV files
-
+# 1) Automating Chromium web browser and save 2 letter and 3 letter words into 2 CSV files
+# 2) Downloading mp3 files using selenium from CSV file
 
 ## Getting Started
 
 1. Clone the project
-2. cd SQLJS/
+2. cd audio_download
 3. run python3 words_to_csv.py
+4. cd ../
+5. cd words_csv
+6. run python3 audio_download.py
 
 ### Prerequisite
 ```
@@ -30,8 +33,9 @@ Chromedriver => ChromeDriver is a separate executable that Selenium WebDriver us
 
 ## About project
 
-### [words_to_csv]()
-### [auidios_to_file]()
+### For words to CSV [words_to_csv](https://github.com/kalyanivetal/mini_projects/tree/master/words_csv)
+### For audio downloads [audios_to_file](https://github.com/kalyanivetal/mini_projects/tree/master/audio_download)
+
 * [Python3]()- The langauge used for webscraping
 * [CSV]()-  Read and write data into CSV file
 

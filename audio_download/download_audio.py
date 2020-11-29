@@ -41,9 +41,11 @@ def read_csv():
     return f_list,words
 
 def get_Data(words_list,first_list):
+
     try:
         chrome_options = Options()
-        prefs = {'download.default_directory' : '/home/puscd/Internship/csv-project/Coding Samples/ESHA/audios'}
+        prefs = {'download.default_directory' : '/home/puscd/Kalyani/Mini Projects/audio_download/audios'}
+
         chrome_options.add_experimental_option('prefs', prefs)
         chrome_options.add_experimental_option("detach", True)
         browser = webdriver.Chrome(chrome_options=chrome_options)
@@ -94,7 +96,7 @@ def get_Data(words_list,first_list):
             wait(browser,10).until(EC.element_to_be_clickable((By.XPATH, "/html/body/section/div[1]/div/div/form/div[3]/div/button[1]"))).click()
             print("Clicked on DOWNLOAD MP3")
             time.sleep(4)
-            d_path="/home/puscd/Internship/csv-project/Coding Samples/ESHA/audios"
+            d_path="./audios"
 
             f_name=latest_download_file(d_path)
             os.chdir(d_path)
@@ -122,6 +124,8 @@ def latest_download_file(path):
 
       return newest
 if __name__=="__main__":
+    if not os.path.exists('audios'):
+        os.makedirs('audios')
     words,first_list=read_csv()
     get_Data(words,first_list)
     
